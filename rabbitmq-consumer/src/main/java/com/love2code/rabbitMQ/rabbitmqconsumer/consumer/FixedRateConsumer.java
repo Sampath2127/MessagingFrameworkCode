@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class FixedRateConsumer {
 
 	private Logger log = LoggerFactory.getLogger(FixedRateConsumer.class);
