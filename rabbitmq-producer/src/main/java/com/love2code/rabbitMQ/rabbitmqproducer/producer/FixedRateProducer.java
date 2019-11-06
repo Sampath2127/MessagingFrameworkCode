@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service
 public class FixedRateProducer {
 
 	@Autowired
@@ -21,6 +21,6 @@ public class FixedRateProducer {
 	public void sendMessage() {
 	i++;
 	//log.info("i is " +i);
-	rabbitTemplate.convertAndSend("course.fixedrate", "Fixed rate "+ i);
+//	rabbitTemplate.convertAndSend("course.fixedrate", "Fixed rate "+ i);
 	}
 }

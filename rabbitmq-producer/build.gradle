@@ -4,6 +4,7 @@ plugins {
 	id 'java'
 }
 
+
 group = 'com.love2code.rabbitMQ'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
@@ -17,6 +18,8 @@ dependencies {
 	implementation 'com.fasterxml.jackson.core:jackson-core:2.9.8'
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
 	implementation 'com.fasterxml.jackson.core:jackson-annotations:2.9.8'
+	compileOnly 'org.projectlombok:lombok:1.18.10'
+	annotationProcessor 'org.projectlombok:lombok:1.18.10'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
